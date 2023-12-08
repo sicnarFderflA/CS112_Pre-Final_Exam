@@ -54,11 +54,11 @@ while True:
         if start <= 2 <= end: #include 2 if its in the range
             result += "2 " # since 2 % 2 = 0 therefore the code will make 2 as not a prime number.
         if start == 1: 
-            for i in range(2, end+1): # 1 is a special number so we skip it
+            for i in range(2, end): # 1 is a special number so we skip it
                 if i % 2 != 0: # checks if the number is uneven. p.s not all uneven numbers are prime but prime numbers except for 2 are uneven.
                     result += str(i) + " "
         else:
-            for i in range(start, end+1): 
+            for i in range(start, end): 
                 if i % 2 != 0:
                     result += str(i) + " "
 
